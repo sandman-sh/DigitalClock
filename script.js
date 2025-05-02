@@ -20,14 +20,16 @@ const month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul","Aug", "Sep", "Oc
 const date = document.getElementById('date')
 const format = document.getElementById("format");
 const day = document.getElementById("days");
-const ampm = hours >= 12 ? "PM" : "AM";
 const time = () => {
   const now = new Date();
   const d = now.getDate()
   const m = month[now.getMonth()]
   const y = now.getFullYear()
   const fullDate = `${d} ${m} ${y}`
-  hours.textContent = String(now.getHours()).padStart(2, 0);
+  const rawHour = now.getHours()
+  const hours12 = rawHour % 12 || 12;
+  const ampm = rawHour  >= 12 ? "PM" : "AM";
+  hours.textContent = String(hours12).padStart(2, 0);
   minutes.textContent = String(now.getMinutes()).padStart(2, 0);
   seconds.textContent = String(now.getSeconds()).padStart(2, 0);
   day.textContent = days[now.getDay()];
