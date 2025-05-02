@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Digital Clock</title>
+</head>
+
+<body>
+    <div class="main"> 
+    
+        <h1 class="title">Digital Clock</h1>
+        <div class="clock">
+
+            <div id="days"></div>
+            <div id="hours"></div><p class="semi">:</p>
+            <div id="minutes"></div><p class="semi">:</p>
+            <div id="seconds"></div>
+            <div id="date"></div>
+            <div id="format"></div>
+
+        </div>
+        <section class="options">
+            <button id="setting"><i class="fa-sharp fa-solid fa-gear"></i></button>
+           <button id="info" > <i class="fa-solid fa-circle-info"></i></button>
+        </section>
+        <div id="setting-page">
+            <button id="closeSettingBtn" class="closeSettingbtn"><i class="fa-solid fa-x"></i></button>
+            <h1 class="msg">Comming Soon...</h1>
+        </div>
+        <div  id="info-page">
+            <button id="closeInfoBtn" class="close-btn"><i class="fa-solid fa-x"></i></button>
+            <div id="info-panel">
+                <h2>About This Clock</h2>
+                <p>This is a live digital clock built with HTML, CSS, and JavaScript.</p>
+                <ul>
+                  <li><i class="fa-solid fa-clock"></i> Displays current hours, minutes, and seconds</li>
+                  <li><i class="fa-solid fa-calendar-days"></i> Shows current day and date</li>
+                  <li><i class="fa-solid fa-moon"></i> Supports 12-hour format with AM/PM</li>
+                  <li><i class="fa-solid fa-palette"></i> Custom font and responsive design for all screen sizes</li>
+                </ul>
+              </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
