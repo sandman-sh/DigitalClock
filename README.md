@@ -1,4 +1,4 @@
-# Digital Clock
+ # Digital Clock
 
 A beautiful and responsive digital clock built with HTML, CSS, and JavaScript that displays real-time hours, minutes, seconds, day, and date.
 
